@@ -8,8 +8,20 @@ from nltk.tokenize import word_tokenize
 # -----------------------------------------
 # Download NLTK resources (only if needed)
 # -----------------------------------------
-nltk.download('punkt')
-nltk.download('stopwords')
+# For a deployed app (like Streamlit), you should avoid downloading NLTK resources 
+# every time the script runs. Instead, check if they exist and download only if missing.
+resources = [
+    ("tokenizers/punkt", "punkt"),
+    ("tokenizers/punkt_tab", "punkt_tab"),
+    ("corpora/stopwords", "stopwords")
+]
+
+for path, name in resources:
+    try:
+        nltk.data.find(path)
+    except LookupError:
+        nltk.download(name)
+
 
 
 # -----------------------------------------
