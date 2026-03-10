@@ -1,0 +1,9 @@
+{
+    "name": "Alice",
+    "age": 25,
+    "skills": [
+        "python",
+        "ml"
+    ],
+    "active": true
+}
