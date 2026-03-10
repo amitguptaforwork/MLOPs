@@ -68,7 +68,7 @@ model = load_model()
 # -----------------------------------------
 # Streamlit UI
 # -----------------------------------------
-st.title("📧 Spam Detection App")
+st.title("📧 Spam Detection App2")
 
 user_input = st.text_area("Enter your message")
 
