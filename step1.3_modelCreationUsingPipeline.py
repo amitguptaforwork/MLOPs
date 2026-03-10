@@ -10,6 +10,7 @@ from nltk.tokenize import word_tokenize
 import pandas as pd
 
 nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('stopwords')
 
 stop_words = set(stopwords.words('english'))
