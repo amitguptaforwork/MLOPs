@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "spam-flask-api"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}

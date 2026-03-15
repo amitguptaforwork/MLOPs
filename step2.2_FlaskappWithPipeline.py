@@ -25,6 +25,12 @@ def clean_tokenized_sentence(s):
 
     return cleaned_s.strip()
 
+# ---- ADD THIS ----
+#To avoid error AttributeError: Can't get attribute 'clean_tokenized_sentence'
+import __main__
+__main__.clean_tokenized_sentence = clean_tokenized_sentence
+# ------------------
+
 # Load saved model pipeline 
 with open("spam_pipeline.pkl", "rb") as f:
     model = pickle.load(f)
